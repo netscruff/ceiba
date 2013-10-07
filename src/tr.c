@@ -46,13 +46,13 @@
 #ifdef WIN32
 #include <windows.h>
 #endif
-/*
-#include <GL/gl.h>
-#include <GL/glu.h>
-*/
+#ifdef __APPLE__
 #include "tr.h"
 #include "GLUT/glut.h"
-
+#else
+#include <GL/gl.h>
+#include <GL/glu.h>
+#endif
 
 #define DEFAULT_TILE_WIDTH  256
 #define DEFAULT_TILE_HEIGHT 256
