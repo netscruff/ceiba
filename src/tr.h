@@ -68,11 +68,11 @@
 #ifndef TR_H
 #define TR_H
 
-
-#include "GLUT/glut.h"
-/* 
+#ifdef __APPLE__
+#include <GLUT/glut.h>
+#else
 #include <GL/gl.h>
-*/
+#endif
 
 #ifdef __cplusplus
 extern "C" {
